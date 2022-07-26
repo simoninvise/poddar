@@ -1,0 +1,33 @@
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@mixin icon-round ($bg: transparent) {
+	background: $bg;
+
+	width: var(--icon-round-size, 2.4em);
+	height: var(--icon-round-size, 2.4em);
+
+	display: inline-flex !important;
+	justify-content: center;
+	align-items: center;
+
+	@if ($bg == transparent) {
+		border: 1px solid currentColor;
+	}
+	@else {
+		border: 1px solid $bg;
+	}
+
+	border-radius: 50%;
+	line-height: 1;
+}
+
+.icon-spinner {
+	animation: spin 2s infinite linear;
+}

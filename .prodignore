@@ -1,0 +1,15 @@
+/.git/
+/.github/
+/lang/
+/node_modules/
+/src/
+/.gitignore
+/.prodignore
+/composer.json
+/composer.lock
+/fontello.js
+/package-lock.json
+/package.json
+/webpack.config.js
+/deploy_key
+.DS_Store

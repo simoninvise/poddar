@@ -1,0 +1,69 @@
+@mixin button {
+	@include button-base;
+
+	&:hover {
+		// TODO: Add hover effects here
+	}
+}
+
+@mixin button-ghost {
+	&:not(:hover) {
+		--button-text-color: var(--button-color);
+
+		background: transparent;
+	}
+}
+
+@mixin button-small {
+	--button-scale: 0.5;
+
+	padding: calc(var(--button-padding-y) * var(--button-scale)) calc(var(--button-padding-x) * var(--button-scale));
+	font-size: var(--font-size-small); //calc(var(--button-font-size) * var(--button-scale));
+}
+
+// Normal button
+.button,
+button,
+input[type=submit] {
+	@include button;
+}
+
+// Ghost button
+.button--ghost {
+	@include button-ghost;
+}
+
+// Small button
+.button--small {
+	@include button-small;
+}
+
+// Button colors
+$button-colors: ("black": black, "white": white);
+
+@each $color-name, $color in $button-colors {
+	.button--#{$color-name} {
+		--button-color: #{$color};
+	}
+}
+
+// Special case for bright buttons
+.button--white {
+	--button-text-color: var(--color-primary);
+}
+
+//////////
+// Buttons
+.buttons {
+	margin: 0 calc(var(--spacing-x-small) * -1) calc(var(--spacing-small) * -1);
+
+	> a {
+		margin: 0 var(--spacing-x-small) var(--spacing-small);
+	}
+
+	@media (--tablet-max) {
+		> a {
+			display: block;
+		}
+	}
+}

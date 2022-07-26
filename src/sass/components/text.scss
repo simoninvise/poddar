@@ -1,0 +1,7 @@
+.text--kicker {
+	@include text($color: rgba(255,255,255,.3), $size: var(--font-size-small));
+
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}

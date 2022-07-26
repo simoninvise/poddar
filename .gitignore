@@ -1,0 +1,7 @@
+/dist/
+/node_modules/
+/vendor/
+/src/sass/icons.scss
+/src/assets/fontello/
+/modules/**/*.png
+.DS_Store

@@ -1,0 +1,32 @@
+{
+    "name": "powerbuoy/sleek",
+    "description": "The WordPress Theme for Developers.",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Andreas Lagerkvist",
+            "email": "powerbuoy@gmail.com"
+        }
+    ],
+    "require": {
+        "powerbuoy/sleek-acf": "^2.0",
+        "powerbuoy/sleek-archive-filter": "^2.0",
+        "powerbuoy/sleek-archive-meta": "^3.0",
+        "powerbuoy/sleek-cleanup": "^4.0",
+        "powerbuoy/sleek-core": "^4.0",
+        "powerbuoy/sleek-custom-logo": "^2.0",
+        "powerbuoy/sleek-gallery": "^3.0",
+        "powerbuoy/sleek-google-maps": "^2.0",
+        "powerbuoy/sleek-google-search": "^1.0",
+        "powerbuoy/sleek-image-sizes": "^1.0",
+        "powerbuoy/sleek-login": "^2.0",
+        "powerbuoy/sleek-menu": "^1.0",
+        "powerbuoy/sleek-modules": "^7.0",
+        "powerbuoy/sleek-notices": "^2.0",
+        "powerbuoy/sleek-post-types": "^6.0",
+        "powerbuoy/sleek-settings": "^1.0",
+        "powerbuoy/sleek-tinymce": "^2.0",
+        "powerbuoy/sleek-utils": "^1.0",
+        "woocommerce/action-scheduler": "^3.4"
+    }
+}
